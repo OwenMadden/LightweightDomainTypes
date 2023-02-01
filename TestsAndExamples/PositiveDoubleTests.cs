@@ -32,7 +32,7 @@ public class PositiveDoubleTests
         var one = PositiveDoubleModule.Create(1.0);
         var anotherOne = PositiveDoubleModule.Create(1.0);
         var two = PositiveDoubleModule.Create(2.0);
-        //Assert.That(one == anotherOne); //Raises warning
+        //Assert.That(one == anotherOne); //Raises warning or error when [Struct]
         Assert.That(one.Equals(anotherOne));
         var sorted = (new[] {two, one, anotherOne}).OrderBy(i => i);
         

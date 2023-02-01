@@ -17,3 +17,6 @@ module UtcTime =
         time |> CheckTimeIsValid UtcTime.Time (fun () -> failwith "Passed non-UTC time when creating UtcTime")
         
     let TryCreate (time: DateTime) = time |> CheckTimeIsValid (fun t -> t |> UtcTime.Time |> Option.Some) (fun () -> Option.None)
+    
+    //This style of TryCreate is more awkward in C#
+    

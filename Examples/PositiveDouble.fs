@@ -1,5 +1,6 @@
 namespace Examples
 
+[<Struct>]
 type PositiveDouble = PositiveDouble of float
 
 module PositiveDouble =
