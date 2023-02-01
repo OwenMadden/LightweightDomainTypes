@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="UtcTime.fs" />
+        <Compile Include="GeoCoordinate.fs" />
+        <Compile Include="PositiveDouble.fs" />
+        <Compile Include="FSharpUsages.fs" />
+    </ItemGroup>
+
+</Project>
