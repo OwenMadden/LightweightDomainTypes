@@ -1,7 +1,7 @@
 namespace Examples
 
 [<Struct>]
-type PositiveDouble = PositiveDouble of float
+type PositiveDouble = private PositiveDouble of float
 
 module PositiveDouble =
     let Unwrap (PositiveDouble value) = value
